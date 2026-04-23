@@ -2,5 +2,7 @@ langchain
 langchain-openai
 langchain-google-genai
 langchain-anthropic
+langchain-groq
+langchain-ollama	
 dotenv
 streamlit
