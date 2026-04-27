@@ -1,9 +1,11 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 import streamlit as st
 from dotenv import load_dotenv
 load_dotenv()
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite")
+llm = ChatGroq(model="openai/gpt-oss-20b")
 
 st.title("🤖 Trained Chat Bot")
 st.markdown("This is a simple chatbot built using Google Gemini 2.5 Flash Lite model. It can answer your questions and have a conversation with you.")
