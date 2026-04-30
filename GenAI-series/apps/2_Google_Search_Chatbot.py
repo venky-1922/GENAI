@@ -5,7 +5,7 @@ from langchain_community.utilities import GoogleSerperAPIWrapper
 from dotenv import load_dotenv
 load_dotenv()
 
-llm = ChatGroq(model="openai/gpt-oss-20b")
+llm = ChatGroq(model="openai/gpt-oss-20b",temperature=0)
 search = GoogleSerperAPIWrapper()
 memory = InMemorySaver()
 
